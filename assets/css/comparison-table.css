@@ -1,0 +1,282 @@
+﻿
+/* ════════════════════════════════════
+   COMPARISON TABLE — PREMIUM STYLES
+   Save as: assets/css/comparison-table.css
+   Link AFTER styles.css in <head>
+
+   Uses your existing CSS variables:
+   --pink, --dark, --ink, --cream, --warm,
+   --muted, --border, --white, --ease
+════════════════════════════════════ */
+
+
+/* ── Outer wrapper ── */
+.cmp-box {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 32px 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+
+/* ── Header block ── */
+.cmp-header {
+  padding: 28px 28px 22px;
+  border-bottom: 1.5px solid var(--border);
+  background: var(--cream);
+}
+
+.cmp-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 8px;
+}
+
+.cmp-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--pink);
+}
+
+.cmp-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+
+
+/* ── Table scroll wrapper ── */
+.cmp-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/* ── Main table ── */
+.cmp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.84rem;
+  color: var(--ink);
+  table-layout: fixed;
+}
+
+/* Column widths */
+.cmp-table colgroup col:first-child { width: 18%; }
+.cmp-table colgroup col             { width: 27.3%; }
+
+/* All cells */
+.cmp-table td,
+.cmp-table th {
+  padding: 13px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.55;
+}
+
+.cmp-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* ── Header row ── */
+.cmp-table thead tr {
+  background: var(--dark);
+}
+
+.cmp-th-feature {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  background: var(--dark);
+  vertical-align: middle;
+}
+
+.cmp-th-product {
+  background: var(--dark);
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px 12px;
+}
+
+.cmp-brand {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+  margin-top: 6px;
+}
+
+.cmp-model {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.55);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* Winner column in header */
+.cmp-winner-col.cmp-th-product,
+th.cmp-winner-col {
+  background: var(--pink);
+  position: relative;
+}
+
+.cmp-winner-col .cmp-brand  { color: var(--white); }
+.cmp-winner-col .cmp-model  { color: rgba(255,255,255,0.75); }
+
+
+/* ── Winner badge pill ── */
+.cmp-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.18);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  white-space: nowrap;
+}
+
+
+/* ── Feature label column ── */
+.cmp-feature-cell {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+  background: var(--cream);
+/*  white-space: nowrap;   */
+}
+
+
+/* ── Winner column body cells ── */
+td.cmp-winner-col {
+  background: rgba(214,51,108,0.04);
+  font-weight: 500;
+  color: var(--dark);
+  border-left: 3px solid var(--pink);
+}
+
+
+/* ── Alternating row tint ── */
+.cmp-row-alt td {
+  background: var(--warm);
+}
+
+.cmp-row-alt td.cmp-winner-col {
+  background: rgba(214,51,108,0.07);
+}
+
+.cmp-row-alt .cmp-feature-cell {
+  background: #ede8df;
+}
+
+
+/* ── Verdict row ── */
+.cmp-verdict-row td {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--dark);
+  background: var(--cream);
+  border-top: 2px solid var(--border);
+  text-align: center;
+  padding: 16px 14px;
+}
+
+.cmp-verdict-row td.cmp-winner-col {
+  color: var(--pink);
+  background: rgba(214,51,108,0.07);
+}
+
+.cmp-verdict-row .cmp-feature-cell {
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
+
+/* ── Star rating ── */
+.cmp-stars {
+  color: #f0a500;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+
+/* ── Status pills (Good / Best / Warn) ── */
+.cmp-pill {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.cmp-pill.good {
+  background: rgba(39,174,96,0.1);
+  color: #1a6e3c;
+  border: 1px solid rgba(39,174,96,0.25);
+}
+
+.cmp-pill.best {
+  background: rgba(39,174,96,0.18);
+  color: #145c2e;
+  border: 1px solid rgba(39,174,96,0.4);
+}
+
+.cmp-pill.warn {
+  background: rgba(214,51,108,0.08);
+  color: #a02050;
+  border: 1px solid rgba(214,51,108,0.2);
+}
+
+
+/* ── Summary note ── */
+.cmp-note {
+  margin: 0;
+  padding: 18px 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.7;
+  background: var(--cream);
+  border-top: 1.5px solid var(--border);
+}
+
+.cmp-note strong {
+  color: var(--dark);
+  font-weight: 700;
+}

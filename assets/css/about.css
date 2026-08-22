@@ -1,0 +1,201 @@
+﻿/* ── Page Banner ── */
+.about-banner {
+  background: var(--cream);
+  padding: 52px 40px 44px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-banner .eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--pink);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.about-banner .eyebrow::before,
+.about-banner .eyebrow::after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--pink);
+}
+
+.about-banner h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+/* ── Main Wrap ── */
+.about-wrap {
+  max-width: 760px;
+  margin: 64px auto 90px;
+  padding: 0 24px;
+}
+
+/* ── Intro Card ── */
+.about-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  padding: 52px 56px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.07);
+}
+
+.about-card .section-eyebrow {
+  font-size: 0.65rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.about-card .section-eyebrow::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--pink);
+}
+
+.about-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 28px;
+  line-height: 1.25;
+}
+
+.about-card h2 span {
+  font-style: normal;
+  font-weight: 700;
+  color: #0e9e7e;
+}
+
+.about-card p {
+font-family: 'DM Sans', sans-serif; /* Explicitly tell it to use DM sans immediately */
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.about-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* ── Divider ── */
+.about-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 36px 0;
+}
+
+/* ── Category Pills ── */
+.about-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 0;
+}
+
+.about-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  background: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.2px;
+}
+
+/* ── Mission Block ── */
+.mission-block {
+  margin-top: 28px;
+  background: var(--dark);
+  border-radius: 14px;
+  padding: 36px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-block::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--pink);
+  opacity: 0.12;
+}
+
+.mission-block .mission-label {
+  font-size: 0.63rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pink);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mission-block .mission-label::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--pink);
+}
+
+.mission-block p {
+font-family: 'Playfair Display', serif; /* Keeps it strictly Playfair Display */
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.mission-block p em {
+  color: var(--pink);
+  font-style: normal;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .about-card {
+    padding: 32px 24px;
+  }
+
+  .about-banner {
+    padding: 40px 20px 32px;
+  }
+
+  .mission-block {
+    padding: 28px 24px;
+  }
+}

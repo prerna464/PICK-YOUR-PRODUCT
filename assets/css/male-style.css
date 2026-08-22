@@ -1,0 +1,119 @@
+﻿/* ════════════════════════════════════
+   MALE-STYLE.CSS
+   Male-specific font overrides
+   ──────────────────────────────────
+   HOW TO USE:
+   Load AFTER styles.css in <head>:
+
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="assets/css/male-style.css">
+
+   That's it. No inline <style> block needed.
+   Header, footer, sidebar are untouched — only
+   article/post content gets the Barlow font.
+════════════════════════════════════ */
+
+
+
+/* ════════════════════════════════════
+   ARTICLE / POST CONTENT — BARLOW FONT
+   Targets only the post content area,
+   never header, footer, or sidebar.
+════════════════════════════════════ */
+
+/* Body text inside post */
+.post-container,
+.post-container p,
+.post-container li,
+.post-container ul {
+  font-family: 'Barlow', 'Arial Narrow', 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+/* Main post H1 title */
+.post-container h1.post-title {
+  font-family: 'Barlow', 'Arial Narrow','DM Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+
+/* Post H2 section headings */
+.post-container h2 {
+  font-family: 'Barlow', 'Arial Narrow', 'DM Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* Post H3 subheadings */
+.post-container h3 {
+  font-family: 'Barlow','Arial Narrow', 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+/* Intro paragraphs */
+.post-intro p {
+  font-family: 'Barlow', 'Arial Narrow', 'DM Sans', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+
+/* Target the paragraph explicitly inside the post container to win the priority battle */
+.post-container p.article-cta-text {
+  font-family: 'Barlow', 'Arial Narrow', 'DM Sans', sans-serif;
+  font-size: 1.45rem !important;  /* Bumps the size up */
+  font-weight: 800 !important;   /* Forces the heavy, thick bold */
+  color: #000000 !important;     /* Forces pure black */
+  text-align: justify;            /* Justifies the text */
+  line-height: 1.5;
+  margin: 25px 0;
+  display: block;
+}
+
+/* Tips box and Trust box text */
+.tips-box,
+.trust-box {
+  font-family: 'Barlow', 'Arial Narrow', 'DM Sans', sans-serif;
+}
+
+.tips-box li,
+.trust-box li {
+  font-family: 'Barlow', 'Arial Narrow', 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Product box paragraphs and list items */
+.product-box p,
+.product-box li {
+  font-family: 'Barlow', 'Arial Narrow', 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* ════════════════════════════════════
+   PRODUCT DISCLAIMER TEXT
+   Overrides inline color: #888 on
+   "⚠️ Availability may vary..." lines
+════════════════════════════════════ */
+.product-box p[style*="color: #888"] {
+  color: #444 !important;
+}
+
+/* ════════════════════════════════════
+   HERO IMAGE CAPTION
+════════════════════════════════════ */
+.article-hero-img .img-caption {
+  font-family: 'Barlow', 'Arial Narrow', 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.5;
+  text-align: center;
+  margin: 6px 0 0;
+}
