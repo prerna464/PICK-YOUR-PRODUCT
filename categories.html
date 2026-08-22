@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buying Guide | PickYourProduct</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    /* ── Page Banner ── */
+    .cats-banner {
+      background: var(--cream);
+      padding: 52px 40px 44px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cats-banner .eyebrow {
+      font-size: 0.68rem;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--pink);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .cats-banner .eyebrow::before,
+    .cats-banner .eyebrow::after {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 2px;
+      background: var(--pink);
+    }
+
+    .cats-banner h1 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.1;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Main Wrap ── */
+    .cats-wrap {
+      max-width: 900px;
+      margin: 64px auto 90px;
+      padding: 0 24px;
+    }
+
+    /* ── Card ── */
+    .cats-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 52px 56px;
+      box-shadow: 0 6px 32px rgba(0, 0, 0, 0.07);
+    }
+
+    .cats-card .section-eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--pink);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .cats-card .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--pink);
+    }
+
+    .cats-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 36px;
+      line-height: 1.25;
+    }
+
+    .cats-card h2 span {
+      font-style: normal;
+      font-weight: 700;
+      color: var(--pink);
+    }
+
+    /* ── Category Grid ── */
+    .cat-links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+
+    .cat-link-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 28px 20px;
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: all 0.25s var(--ease);
+      text-align: center;
+    }
+
+    .cat-link-card:hover {
+      border-color: var(--pink);
+      background: var(--white);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(14, 158, 126, 0.12);
+    }
+
+    .cat-link-icon {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .cat-link-name {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: 0.2px;
+    }
+
+    .cat-link-desc {
+      font-size: 0.76rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── Divider ── */
+    .cats-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 36px 0;
+    }
+
+    /* ── Bottom note ── */
+    .cats-note {
+      padding: 18px 22px;
+      background: var(--cream);
+      border-left: 3px solid var(--pink);
+      border-radius: 0 10px 10px 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .cats-note strong {
+      color: var(--dark);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .cats-card {
+        padding: 32px 24px;
+      }
+
+      .cats-banner {
+        padding: 40px 20px 32px;
+      }
+
+      .cat-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="menu-left">
+    <div class="all-menu">
+      <span class="nav-icon"></span><strong>All</strong>
+      <div class="dropdown">
+        <a href="electronics.html">Electronics</a>
+        <a href="home-appliances.html">Home Appliances</a>
+        <a href="skincare-beauty.html">Beauty &amp; Skincare</a>
+        <a href="fitness.html">Fitness &amp; Health</a>
+      </div>
+    </div>
+  </div>
+  <h1 class="logo"><a href="index.html">Pick<span class="logo-five">Your</span>Product</a></h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="categories.html" class="active-nav">Buying Guide</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ── PAGE BANNER ── -->
+<div class="cats-banner">
+  <div class="eyebrow">Browse All</div>
+  <h1>Shop Smarter by <span style="font-style:normal; color:var(--pink);">Category</span></h1>
+</div>
+
+<!-- ── CONTENT ── -->
+<div class="cats-wrap">
+  <div class="cats-card">
+
+    <div class="section-eyebrow">Buying Guide</div>
+    <h2>Find your <span>perfect product.</span></h2>
+
+    <div class="cat-links-grid">
+
+      <a href="electronics.html" class="cat-link-card">
+        <span class="cat-link-icon">📱</span>
+        <span class="cat-link-name">Electronics</span>
+        <span class="cat-link-desc">Top gadgets worth your money</span>
+      </a>
+
+      <a href="home-appliances.html" class="cat-link-card">
+        <span class="cat-link-icon">🏠</span>
+        <span class="cat-link-name">Home Appliances</span>
+        <span class="cat-link-desc">Smart picks for every home</span>
+      </a>
+
+      <a href="skincare-beauty.html" class="cat-link-card">
+        <span class="cat-link-icon">✨</span>
+        <span class="cat-link-name">Beauty &amp; Skincare</span>
+        <span class="cat-link-desc">Products people actually love</span>
+      </a>
+
+      <a href="fitness.html" class="cat-link-card">
+        <span class="cat-link-icon">💪</span>
+        <span class="cat-link-name">Fitness &amp; Health</span>
+        <span class="cat-link-desc">Build strength, energy and wellness</span>
+      </a>
+
+    </div>
+
+    <div class="cats-divider"></div>
+
+    <div class="cats-note">
+      <strong>🎯 Our promise:</strong> Instead of overwhelming you with hundreds of options, we highlight only the few products that are actually worth your money.
+    </div>
+
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-container">
+    <p class="footer-brand"><span class="logo-accent">PickYour</span>Product</p>
+    <p class="footer-tag">Your trusted source for unbiased product reviews.</p>
+    <div class="footer-links">
+      <a href="about.html">Our Story</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 PickYourProduct. All Rights Reserved.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

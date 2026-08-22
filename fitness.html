@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness &amp; Health Reviews | PickYourProduct</title>
+
+  <link rel="canonical" href="https://prerna464.github.io/PickYourProduct/fitness.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Reusing the structural table layout styles from electronics.css -->
+
+  <link rel="stylesheet" href="assets/css/fitness.css">
+
+</head>
+<body>
+
+<!-- HEADER unchanged -->
+<header>
+  <div class="menu-left">
+    <div class="all-menu">
+      <span class="nav-icon"></span><strong>All</strong>
+      <div class="dropdown">
+        <a href="electronics.html">Electronics</a>
+        <a href="home-appliances.html">Home Appliances</a>
+        <a href="skincare-beauty.html">Beauty &amp; Skincare</a>
+        <a href="fitness.html">Fitness &amp; Health</a>
+      </div>
+    </div>
+  </div>
+  <h1 class="logo"><a href="index.html">Pick<span class="logo-five">Your</span>Product</a></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="categories.html" class="active-nav">Buying Guide</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<!-- LATEST ARTICLES same label/title as main page -->
+<div class="latest-wrap">
+  <div class="section-label">Latest Articles</div>
+  <h2 class="section-title-line">Fresh from <span>our writers</span></h2>
+
+
+<div class="fitness-intro">
+  <h2>Fitness & Health Buying Guides & Reviews</h2>
+
+  <p>
+    Looking for the best fitness and health products without spending hours comparing features and reviews?
+    Our Fitness & Health Buying Guides cover fitness bands, smartwatches, weighing scales,
+    massagers, gym accessories, and wellness gadgets to help you make informed buying decisions.
+  </p>
+
+  <p>
+    We focus on accuracy, comfort, durability, features, and overall value for money.
+    Whether you're tracking your fitness goals, improving your daily health routine,
+    or searching for the best budget-friendly option, you'll find carefully researched
+    Top 5 recommendations and honest comparisons here.
+  </p>
+</div>
+
+  <div class="blog-main-layout">
+
+    <!-- LEFT: Compact article list -->
+    <div>
+
+      <!-- Filter bar adapted for Fitness & Health -->
+      <div class="elec-filter-bar">
+        <button class="elec-filter-btn active" onclick="filterRows('all',this)">All</button>
+        <button class="elec-filter-btn" onclick="filterRows('mattress',this)">Orthopaedic Beds</button>
+        <button class="elec-filter-btn" onclick="filterRows('nutrition',this)">Supplements</button>
+<!--        <button class="elec-filter-btn" onclick="filterRows('treadmill',this)">Treadmills</button>
+        <button class="elec-filter-btn" onclick="filterRows('massage',this)">Massagers</button>
+        <button class="elec-filter-btn" onclick="filterRows('cycles',this)">Exercise Bikes</button>     -->
+        <button class="elec-filter-btn" onclick="filterRows('monitors',this)">Health Monitors</button>      
+      </div>
+
+      <!-- Article index table -->
+      <div class="elec-table">
+
+        <div class="elec-table-head">
+          <span class="ecol-num">#</span>
+          <span class="ecol-img"></span>
+          <span class="ecol-main">Article</span>
+          <span class="ecol-cat">Category</span>
+          <span class="ecol-date">Date</span>
+          <span class="ecol-read">Read</span>
+        </div>
+
+
+
+      <!-- Cardio Equipment: Treadmills -->
+<!--    <div class="elec-section-label">Treadmills</div>
+
+        <a href="treadmill-post.html" class="elec-row visible" data-cat="treadmill">
+          <span class="ecol-num">1</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/TRADEMILL.jpg" alt="Treadmill"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Top 5 Best Folding Treadmills for Home Use Under ₹25,000 (2026)</span>
+            <span class="erow-excerpt">Motor duty, shock absorption, and spacesaver folds tested.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Cardio</span></span>
+          <span class="ecol-date erow-date">May 21</span>
+          <span class="ecol-read erow-read">6 min</span>
+        </a>
+
+        <a href="#" class="elec-row visible" data-cat="treadmill">
+          <span class="ecol-num">2</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/WALK-PAD.jpg" alt="Walking Pad"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Best Under-Desk Walking Pads — Compact Work-From-Home Picks</span>
+            <span class="erow-excerpt">Quiet motors and remote-controlled flat treadmills compared.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Cardio</span></span>
+          <span class="ecol-date erow-date">May 24</span>
+          <span class="ecol-read erow-read">4 min</span>
+        </a>     -->
+
+        <!-- Recovery: Massagers -->
+<!--        <div class="elec-section-label">Massagers &amp; Recovery</div>
+
+        <a href="#" class="elec-row visible" data-cat="massage">
+          <span class="ecol-num">3</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/MASSAGE-GUN.jpg" alt="Massage Gun"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Top 5 Best Deep Tissue Massage Guns Under ₹3000</span>
+            <span class="erow-excerpt">Stall force, amplitude, and attachment heads carefully verified.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Recovery</span></span>
+          <span class="ecol-date erow-date">May 22</span>
+          <span class="ecol-read erow-read">5 min</span>
+        </a>
+
+        <a href="#" class="elec-row visible" data-cat="massage">
+          <span class="ecol-num">4</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/BODY-MASSAGE.jpg" alt="Foot Massager"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Best Full Body &amp; Leg Massagers for Senior Citizens</span>
+            <span class="erow-excerpt">Heat therapy and compression rollers for genuine pain relief.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Recovery</span></span>
+          <span class="ecol-date erow-date">May 25</span>
+          <span class="ecol-read erow-read">5 min</span>
+        </a>     -->
+
+        <!-- Endurance: Exercise Bikes -->
+<!--        <div class="elec-section-label">Exercise Bikes</div>
+
+        <a href="#" class="elec-row visible" data-cat="cycles">
+          <span class="ecol-num">5</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/SPIN-BIKE.jpg" alt="Spin Bike"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Top 5 Best Magnetic Exercise Spin Bikes Under ₹15,000</span>
+            <span class="erow-excerpt">Flywheel weight and silent magnetic resistance systems graded.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Cardio</span></span>
+          <span class="ecol-date erow-date">May 23</span>
+          <span class="ecol-read erow-read">5 min</span>
+        </a>    -->
+
+        <!-- Diagnostics: Health Monitors -->
+<!--        <div class="elec-section-label">Health Monitors</div>
+
+        <a href="#" class="elec-row visible" data-cat="monitors">
+          <span class="ecol-num">6</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/BLOOD-PRESSURE.jpg" alt="BP Monitor"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Best Digital Blood Pressure Monitors for Home — Accuracy Tested</span>
+            <span class="erow-excerpt">Clinically validated upper-arm monitors with memory tracking.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Diagnostics</span></span>
+          <span class="ecol-date erow-date">May 25</span>
+          <span class="ecol-read erow-read">4 min</span>
+        </a>
+
+        <a href="#" class="elec-row visible" data-cat="monitors">
+          <span class="ecol-num">7</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/WEIGHT-SCALE.jpg" alt="Smart Scale"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Top 5 Best Smart Weight Scales With BMI &amp; Body Fat Analyzer</span>
+            <span class="erow-excerpt">App sync accuracy and sensor reliability breakdown.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Diagnostics</span></span>
+          <span class="ecol-date erow-date">May 26</span>
+          <span class="ecol-read erow-read">3 min</span>
+        </a>          -->
+
+
+        <!-- Sleep Science: Orthopaedic Beds -->
+        <div class="elec-section-label">Orthopaedic Beds</div>
+
+        <a href="mattress.html" class="elec-row visible" data-cat="mattress">
+          <span class="ecol-num">8</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/MATTRESS.webp" alt="Mattress"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Top 5 Best Orthopaedic Mattresses for Back Pain Relief (2026)</span>
+            <span class="erow-excerpt">Memory foam vs pocket spring spine alignment compared.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Sleep Wellness</span></span>
+          <span class="ecol-date erow-date">April 18</span>
+          <span class="ecol-read erow-read">6 min</span>
+        </a>
+
+        <!-- Wellness: Supplements -->
+        <div class="elec-section-label">Nutrition &amp; Supplements</div>
+
+        <a href="protein.html" class="elec-row visible" data-cat="nutrition">
+          <span class="ecol-num">9</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/WHEY.webp" alt="Whey Protein"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Best Whey Protein Isolates in India — Labdoor Certified Picks</span>
+            <span class="erow-excerpt">Protein per scoop efficiency, mixability, and purity tested.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Nutrition</span></span>
+          <span class="ecol-date erow-date">May 18</span>
+          <span class="ecol-read erow-read">5 min</span>
+        </a>
+
+        <a href="creatine.html" class="elec-row visible" data-cat="nutrition">
+          <span class="ecol-num">10</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/CREATINE-22.webp" alt="Creatine"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Best Creatine Monohydrate Powders for Strength &amp; Muscle Output</span>
+            <span class="erow-excerpt">Unflavored micronized powders that offer the fastest absorption.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Nutrition</span></span>
+          <span class="ecol-date erow-date">May 21</span>
+          <span class="ecol-read erow-read">4 min</span>
+        </a>
+
+        <!-- Diagnostics: Health Monitors -->
+        <div class="elec-section-label">Health Monitors</div>
+
+        <a href="fitness-band.html" class="elec-row visible" data-cat="monitors">
+          <span class="ecol-num">6</span>
+          <div class="ecol-img"><img loading="lazy" src="assets/images/MI.webp" alt="fitness band"></div>
+          <div class="ecol-main">
+            <span class="erow-title">Best fitness band under 4000 in india</span>
+            <span class="erow-excerpt">Best Fitness band for step tracking, sleep analysis, heart-rate monitoring.</span>
+          </div>
+          <span class="ecol-cat"><span class="erow-tag">Fitness tracker</span></span>
+          <span class="ecol-date erow-date">June 4</span>
+          <span class="ecol-read erow-read">4 min</span>
+        </a>
+
+      </div><!-- /elec-table -->
+
+      <!-- PAGINATION matching original structures -->
+<!--      <div class="pagination">
+        <a href="#" class="prev">Prev</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#" class="next">Next</a>
+      </div>    -->
+
+    </div><!-- /left -->
+
+
+    <!-- SIDEBAR matching structure -->
+    <aside class="sidebar">
+
+      <!-- Category stats block updated for Fitness & Health -->
+      <div class="sb-block">
+        <div class="sb-title"><span class="dot"></span> Wellness Stats</div>
+        <div class="elec-stats-grid">
+          <div class="elec-stat-cell">
+            <div class="elec-stat-num">4</div>
+            <div class="elec-stat-label">Articles</div>
+          </div>
+          <div class="elec-stat-cell">
+            <div class="elec-stat-num">3</div>
+            <div class="elec-stat-label">Topics</div>
+          </div>
+          <div class="elec-stat-cell">
+            <div class="elec-stat-num">4</div>
+            <div class="elec-stat-label">Products</div>
+          </div>
+          <div class="elec-stat-cell">
+            <div class="elec-stat-num">★</div>
+            <div class="elec-stat-label">Verified</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Posts matching style -->
+      <div class="sb-block">
+        <div class="sb-title"><span class="dot"></span> Popular Posts</div>
+      <a href="protein.html" class="sidebar-pop-item">
+        <div class="sidebar-pop-thumb">
+          <img loading="lazy" src="assets/images/protein-1.webp" alt="protein">
+        </div>
+
+        <div class="sidebar-pop-info">
+          <span class="sidebar-pop-cat">Protein for Beginners</span>
+          <p class="sidebar-pop-title">
+            Top 5 Best Protein Supplements for Muscle Gain
+          </p>
+        </div>
+      </a>
+
+      <a href="smartwatch-post.html" class="sidebar-pop-item">
+        <div class="sidebar-pop-thumb">
+          <img loading="lazy"
+               src="assets/images/swatch-1.webp"
+               alt="Best Smartwatch Under 2000">
+        </div>
+        <div class="sidebar-pop-info">
+          <span class="sidebar-pop-cat">Fitness & Health</span>
+          <p class="sidebar-pop-title">Best Smartwatch Under ₹2000 (2026)</p>
+        </div>
+      </a>
+
+
+      <a href="mattress.html" class="sidebar-pop-item">
+        <div class="sidebar-pop-thumb">
+          <img loading="lazy"
+               src="assets/images/mattress-1.webp"
+               alt="Best Mattress for Back Pain">
+        </div>
+        <div class="sidebar-pop-info">
+          <span class="sidebar-pop-cat">Fitness & Health</span>
+          <p class="sidebar-pop-title">Best Mattress for Back Pain (2026)</p>
+        </div>
+      </a>
+
+      </div>
+
+      <!-- Tags updated for healthcare context -->
+      <div class="sb-block">
+        <div class="sb-title"><span class="dot"></span> Tags</div>
+        <div class="tags">
+<!--          <a href="treadmill-post.html" class="tag">Treadmill</a>     -->
+          <a href="mattress.html" class="tag">Orthopaedic</a>
+          <a href="mattress.html" class="tag">Back Pain</a>
+<!--          <a href="#" class="tag">Cardio</a>
+          <a href="#" class="tag">Massage Gun</a>
+          <a href="#" class="tag">Recovery</a>
+          <a href="#" class="tag">Home Gym</a>         -->
+          <a href="protein.html" class="tag">Whey Isolate</a>
+<!--          <a href="#" class="tag">BP Monitor</a>
+          <a href="#" class="tag">BMI Scale</a>            -->
+          <a href="fitness-band.html" class="tag">Fitness Trackers</a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- FOOTER unchanged -->
+<footer>
+  <div class="footer-container">
+    <p class="footer-brand"><span class="logo-accent">PickYour</span>Product</p>
+    <p class="footer-tag">Your trusted source for unbiased product reviews.</p>
+    <div class="footer-links">
+      <a href="about.html">Our Story</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 PickYourProduct. All Rights Reserved.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  function filterRows(cat, btn) {
+    document.querySelectorAll('.elec-filter-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var rows = document.querySelectorAll('.elec-row');
+    var labels = document.querySelectorAll('.elec-section-label');
+    if (cat === 'all') {
+      rows.forEach(function(r){ r.style.display = ''; });
+      labels.forEach(function(l){ l.style.display = ''; });
+      return;
+    }
+    labels.forEach(function(l){ l.style.display = 'none'; });
+    rows.forEach(function(r){
+      r.style.display = (r.dataset.cat === cat) ? '' : 'none';
+    });
+  }
+</script>
+</body>
+</html>
