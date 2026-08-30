@@ -28,7 +28,10 @@
   <url><loc>https://pickyourproduct.com/auto-wmachines.html</loc></url>
   <url><loc>https://pickyourproduct.com/fitness-band.html</loc></url>
   <url><loc>https://pickyourproduct.com/induction-cooktops.html</loc></url>
-  <url><loc>https://pickyourproduct.com/mattress.html</loc></url>
+  <url>
+    <loc>https://pickyourproduct.com/mattress.html</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
   <url><loc>https://pickyourproduct.com/smartwatch-post.html</loc></url>
   <url><loc>https://pickyourproduct.com/sunscreen-post.html</loc></url>
   <url><loc>https://pickyourproduct.com/vacuum.html</loc></url>
