@@ -1,0 +1,412 @@
+﻿/* ════════════════════════════════════
+   MATTRESS-GUIDE.CSS
+   Page-specific additions for mattress.html
+   ──────────────────────────────────
+   HOW TO USE:
+   Load AFTER styles.css and comparison-table.css in <head>:
+
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="assets/css/comparison-table.css">
+   <link rel="stylesheet" href="assets/css/mattress-guide.css">
+
+   Same pattern as male-style.css — only touches
+   .post-container content. Header, footer, and
+   sidebar are untouched. Uses only the existing
+   --pink, --dark, --ink, --cream, --warm, --muted,
+   --border, --white, --ease variables from styles.css.
+════════════════════════════════════ */
+
+
+/* ════════════════════════════════════
+   ANCHOR OFFSET
+   So "Jump to section" links don't tuck
+   content behind the sticky header.
+════════════════════════════════════ */
+.post-container [id] {
+  scroll-margin-top: 90px;
+}
+
+
+/* ════════════════════════════════════
+   SUB-HEADINGS (H3) INSIDE ARTICLE
+   .post-container > h2 already has a
+   style from styles.css. This is one
+   level down, for things like the four
+   sleeping-position cards.
+════════════════════════════════════ */
+.post-container h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.35;
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.post-container h3::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--pink);
+  flex-shrink: 0;
+}
+
+
+/* ════════════════════════════════════
+   DISCLAIMER NOTE
+   Same visual language as .affiliate-note,
+   used once for the "general info, not
+   medical advice" line.
+════════════════════════════════════ */
+.disclaimer-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: var(--warm);
+  border-left: 3px solid var(--pink);
+  padding: 12px 14px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+
+/* ════════════════════════════════════
+   "ON THIS PAGE" JUMP NAV
+════════════════════════════════════ */
+.toc-box {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 24px 0;
+}
+.toc-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 12px;
+}
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 20px;
+}
+.toc-list li {
+  border-bottom: 1px solid var(--border);
+}
+.toc-list li:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+.toc-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.83rem;
+  color: var(--ink);
+  padding: 8px 0;
+  transition: color 0.2s var(--ease);
+}
+.toc-list a::before {
+  content: '→';
+  color: var(--pink);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.toc-list a:hover {
+  color: var(--pink);
+}
+
+
+/* ════════════════════════════════════
+   QUICK ANSWER / EDITOR'S PICKS BOX
+════════════════════════════════════ */
+.quick-answer-box {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 26px 26px 20px;
+  margin: 28px 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+.qa-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 8px;
+}
+.qa-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--pink);
+}
+.qa-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.qa-sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+.qa-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.qa-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+}
+.qa-item:last-child {
+  border-bottom: none;
+}
+.qa-num {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--dark);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qa-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.qa-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+.qa-purpose {
+  font-size: 0.76rem;
+  color: var(--pink);
+  font-weight: 600;
+}
+.qa-link {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--pink);
+  white-space: nowrap;
+  transition: opacity 0.2s var(--ease);
+}
+.qa-link:hover {
+  opacity: 0.65;
+}
+
+
+/* ════════════════════════════════════
+   SLEEPING POSITION CARDS
+════════════════════════════════════ */
+.pos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0 34px;
+}
+.pos-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+.pos-card p {
+  font-size: 0.86rem;
+  color: var(--ink);
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+.pos-card p:last-child {
+  margin-bottom: 0;
+}
+.pos-pick {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--pink);
+  background: rgba(14,158,126,0.08);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+
+/* ════════════════════════════════════
+   WARNING / MEDICAL ALERT BOX
+   Deliberately different from the pink
+   tips-box — red signals "pause and
+   check", not "here's a helpful tip".
+════════════════════════════════════ */
+.warning-box {
+  background: #fff8f7;
+  border: 1.5px solid rgba(229,62,62,0.25);
+  border-left: 4px solid #e53e3e;
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin: 24px 0;
+}
+.warning-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #a02020;
+  margin-bottom: 10px;
+}
+.warning-box h3::before {
+  content: '⚠️';
+  background: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}
+.warning-box p {
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+.warning-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+.warning-box li {
+  font-size: 0.85rem;
+  color: #7a1f1f;
+  line-height: 1.6;
+  padding: 6px 0 6px 22px;
+  position: relative;
+}
+.warning-box li::before {
+  content: '•';
+  position: absolute;
+  left: 4px;
+  color: #e53e3e;
+  font-weight: 700;
+}
+.warning-box .warning-footnote {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+
+/* ════════════════════════════════════
+   FAQ ACCORDION
+   Native <details>/<summary> — no JS.
+════════════════════════════════════ */
+.faq-list {
+  margin: 20px 0 10px;
+  border-top: 1px solid var(--border);
+}
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 4px 0;
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 4px;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.4;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: '+';
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--pink);
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s var(--ease);
+}
+.faq-item[open] summary::after {
+  content: '–';
+  transform: rotate(180deg);
+}
+.faq-item p {
+  font-size: 0.87rem;
+  color: var(--muted);
+  line-height: 1.7;
+  padding: 0 4px 18px 4px;
+}
+
+
+/* ════════════════════════════════════
+   RESPONSIVE — MOBILE
+════════════════════════════════════ */
+@media (max-width: 640px) {
+  .post-container [id] {
+    scroll-margin-top: 128px; /* header wraps taller on mobile */
+  }
+  .toc-list {
+    grid-template-columns: 1fr;
+  }
+  .toc-list li:nth-last-child(-n+2) {
+    border-bottom: 1px solid var(--border);
+  }
+  .toc-list li:last-child {
+    border-bottom: none;
+  }
+  .quick-answer-box {
+    padding: 20px 18px 16px;
+  }
+  .pos-grid {
+    grid-template-columns: 1fr;
+  }
+  .warning-box {
+    padding: 16px 16px;
+  }
+  .faq-item summary {
+    font-size: 0.88rem;
+  }
+}
