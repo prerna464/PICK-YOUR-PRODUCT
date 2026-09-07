@@ -10,7 +10,10 @@
 
   <!-- Category Pages -->
   <url><loc>https://pickyourproduct.com/electronics.html</loc></url>
-  <url><loc>https://pickyourproduct.com/fitness.html</loc></url>
+  <url>
+    <loc>https://pickyourproduct.com/fitness.html</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
   <url><loc>https://pickyourproduct.com/home-appliances.html</loc></url>
   <url><loc>https://pickyourproduct.com/skincare-beauty.html</loc></url>
 
@@ -35,5 +38,9 @@
   <url><loc>https://pickyourproduct.com/smartwatch-post.html</loc></url>
   <url><loc>https://pickyourproduct.com/sunscreen-post.html</loc></url>
   <url><loc>https://pickyourproduct.com/vacuum.html</loc></url>
+  <url>
+    <loc>https://pickyourproduct.com/electric-flosser.html</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
 
 </urlset>
