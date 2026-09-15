@@ -24,3 +24,45 @@
 .skincare-intro p:last-child{
     margin-bottom:0;
 }
+
+/* ── Nykaa & Myntra buy buttons ──
+   Beauty/Skincare-only — kept here instead of the shared styles.css
+   so non-skincare pages (electronics, fitness, etc.) never load them. */
+
+/* Nykaa — brand pink, pill shape (nykaa.com uses fully-rounded "Add to Bag" buttons) */
+.product-box .buy-btn.nykaa {
+  background: #FC2779;
+  color: #ffffff;
+  border: 2px solid #FC2779;
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 rgba(252,39,121,0.35);
+}
+
+.product-box .buy-btn.nykaa:hover {
+  background: #e01d69;
+  border-color: #e01d69;
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 rgba(252,39,121,0.55);
+}
+
+/* Myntra — brand red-pink, sharp corners (myntra.com uses near-square "Add to Bag" buttons) */
+
+.product-box .buy-btn.myntra {
+  background: #FF4B3C;
+  border: 2px solid #FF4B3C;
+  box-shadow: 3px 3px 0 rgba(255,75,60,0.35);
+}
+.product-box .buy-btn.myntra:hover {
+  background: #e63c2d;
+  border-color: #e63c2d;
+  box-shadow: 4px 4px 0 rgba(255,75,60,0.55);
+}
+
+/* Sale badge + product price */
+
+.product-box .sale-badge {
+  display: inline-block;
+  background: #e6f2ff;
+  color: #005bbb;
+}
+
